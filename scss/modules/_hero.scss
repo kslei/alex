@@ -1,0 +1,75 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/frontend.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 175px 0;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(38,39,50,0.7);
+    z-index: 0;
+  }
+}
+.hero-title {
+  text-align: center;
+  font-family: "$LibreBaskerville";
+  font-style: normal;
+  letter-spacing: 3px;
+  font-size: 60px;
+  line-height: 85px;
+  font-weight: 400;
+  color: $white;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+.hero-button {
+  cursor: pointer;
+  padding: 17px 40px;
+  background-color: #fc5f45;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 26px;
+  margin-bottom: 80px;
+  z-index: 1;
+}
+.hero-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 1;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 35px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 38px;
+}
+.green, .purpure, .yellow {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.green {
+  color: $green;
+}
+.purpure {
+  color: $purpure;
+}
+.yellow {
+  color: $yellow;
+}

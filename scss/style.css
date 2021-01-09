@@ -47,4 +47,253 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-MediumItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../fonts/Poppins-SemiBoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* libre-baskerville-regular - latin */
+@font-face {
+  font-family: "LibreBaskerville";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/libre-baskerville-v9-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/libre-baskerville-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/libre-baskerville-v9-latin-regular.woff2") format("woff2"), url("../../fonts/libre-baskerville-v9-latin-regular.woff") format("woff"), url("../../fonts/libre-baskerville-v9-latin-regular.ttf") format("truetype"), url("../fonts/libre-baskerville-v9-latin-regular.svg#LibreBaskerville") format("svg");
+  /* Legacy iOS */
+}
+
+/* libre-baskerville-700 - latin */
+@font-face {
+  font-family: "LibreBaskerville";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/libre-baskerville-v9-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/libre-baskerville-v9-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/libre-baskerville-v9-latin-700.woff2") format("woff2"), url("../../fonts/libre-baskerville-v9-latin-700.woff") format("woff"), url("../../fonts/libre-baskerville-v9-latin-700.woff") format("woff"), url("../fonts/libre-baskerville-v9-latin-700.ttf") format("truetype"), url("../../fonts/libre-baskerville-v9-latin-700.svg#LibreBaskerville") format("svg");
+  /* Legacy iOS */
+}
+
+/* libre-baskerville-italic - latin */
+@font-face {
+  font-family: "LibreBaskerville";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../fonts/libre-baskerville-v9-latin-italic.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/libre-baskerville-v9-latin-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/libre-baskerville-v9-latin-italic.woff2") format("woff2"), url("../../fonts/libre-baskerville-v9-latin-italic.woff") format("woff"), url("../../fonts/libre-baskerville-v9-latin-italic.ttf") format("truetype"), url("../../fonts/libre-baskerville-v9-latin-italic.svg#LibreBaskerville") format("svg");
+  /* Legacy iOS */
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo {
+  max-width: 97px;
+  padding: 24px 0;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #272727;
+  margin-left: 21px;
+}
+
+.hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/frontend.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 175px 0;
+}
+
+.hero:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(38, 39, 50, 0.7);
+  z-index: 0;
+}
+
+.hero-title {
+  text-align: center;
+  font-family: "$LibreBaskerville";
+  font-style: normal;
+  letter-spacing: 3px;
+  font-size: 60px;
+  line-height: 85px;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+
+.hero-button {
+  cursor: pointer;
+  padding: 17px 40px;
+  background-color: #fc5f45;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 26px;
+  margin-bottom: 80px;
+  z-index: 1;
+}
+
+.hero-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 35px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 38px;
+}
+
+.green, .purpure, .yellow {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.green {
+  color: #38c695;
+}
+
+.purpure {
+  color: #b27cf5;
+}
+
+.yellow {
+  color: #feb960;
+}
 /*# sourceMappingURL=style.css.map */

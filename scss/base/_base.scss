@@ -41,3 +41,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+button {
+  border: none;
+}
